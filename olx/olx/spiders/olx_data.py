@@ -9,7 +9,7 @@ from scrapy_splash import SplashRequest
 class OlxCollector(scrapy.Spider):
     name = "olx"
 
-    start_urls = [f"http://localhost:8050/render.html?url=https://www.olx.com.br/estado-sp/sao-paulo-e-regiao?q=forno&o={i}&timeout=10&wait=0.5" for i in range(11) if i]
+    start_urls = [f"http://localhost:8050/render.html?url=https://www.olx.com.br/estado-sp/sao-paulo-e-regiao?q=forno&o={i}&timeout=10&wait=0.5" for i in range(2) if i]
     # start_urls = [f"https://www.olx.com.br/estado-sp/sao-paulo-e-regiao?q=forno&o={i}" for i in range(11) if i]
      
     def start_requests(self):
